@@ -1,0 +1,32 @@
+
+  /* Impede que QUALQUER imagem ultrapasse o tamanho do container ou da tela */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Tamanho específico para o logotipo no cabeçalho */
+  .logo img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  /* Tamanho específico para as fotos dos especialistas */
+  .especialistas-grid img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; /* Corta proporcionalmente sem esticar/achatar */
+    border-radius: 50%; /* Deixa a foto redonda (opcional) */
+  }
+
+  /* Tamanho específico para as imagens de capa dos artigos */
+  .article-cover img {
+    width: 100%;
+    max-width: 400px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
